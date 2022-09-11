@@ -5,8 +5,14 @@ const {setAppData}=require('../model/appli')
 let jwt = require('jsonwebtoken')
 
 
+router.get('/', (req, res) => {
+  res.send('API is working')
+  
+})
 
 router.post('/sign', function (req, res) {
+
+
 
   sign(req.body).then(result => {
     if(!result.data){
