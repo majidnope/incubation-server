@@ -46,7 +46,7 @@ function setAppData(body) {
           name9: name9,
           userId: id,
           status: "new",
-          process: 0
+          progress: 10
         })
         .then((res) => {
           result
