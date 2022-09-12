@@ -49,7 +49,7 @@ router.post('/login', function (req, res) {
 router.post('/application', function (req, res) {
 
   setAppData(req.body).then(() => {
-    res.redirect('http://localhost:3000/')
+    res.redirect('back')
   })
 });
 
